@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Insert Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h3 align="center">Insert</h3>       
+<form action="InsertData" method="post" id="insert"></form>
+    <table width="650" height="70" border="0" align="center">
+        <tr>
+            <td>
+<label for="uid" form="insert">uid</label>
+<input type="text" name="uid" placeholder="enter uid" form="insert">
+<label for="name" form="insert">name</label>
+<input type="text" name="name" placeholder="enter name" form="insert">
+<label for="class" form="insert">class</label>
+<input type="text" name="class" placeholder="enter class" form="insert">
+        <center>
+<label for="age" form="insert">age</label>
+<input type="number" name="age" placeholder="enter age" form="insert">
+<br>
+<button type="submit" name="submit" value="insert" form="insert" >submit</button>
+        </center>
+            </td>
+        </tr>
+        <tr>
+            <td>
+<label for="textDislay" form="insert">view data</label> <button type="submit" name="submit" form="insert" value="display" >display Data</button>
+            </td>
+        </tr>
+  </table>
+    
+
+<br>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>
+Print Table
+</title>
+</head>
+<script>
+function perform()
+{
+var i=0;
+var print=document.getElementById("print");
+var data="";
+var N=parseInt(document.getElementById("num").value);
+for(i=1;i<=10;i++)
+{
+ data+=N+"x"+i+"="+cal(N,i)+"<br>";
+
+}
+print.innerHTML=data;
+}
+function cal(N,i)
+{
+	var output=N*i;
+	if(output%2==0)
+	return output+ "(even)";
+	else
+	return output+"(odd)";
+}
+</script>
+<body>
+<form>
+
+Input number<input type="number" name="number" id="num">
+<input type="button" onclick="perform()" name="button" value="click">
+</form>
+<p id="print">
+</p>
+</body>
+</html>
